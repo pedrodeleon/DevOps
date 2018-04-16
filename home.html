@@ -16,6 +16,7 @@
 </head>
 <body>
 <h1>DevOps App GT Project</h1>
+<span id="greeting"></span>
 <div id="library">
   <h3>Users</h3>
   <div id="users">
@@ -60,7 +61,7 @@
           todaysDate.getFullYear();
     return greetingString;
   }
-  $('#greeting').text(greeting('Pedro'));
+  $('#greeting').text(greeting('Pedro de Leon'));
 </script>
 
 <!-- ======================== UNIT-TESTS LOGIC ==================== -->
@@ -80,6 +81,12 @@
 <script>
   function testTheTruth() {
     testResults('1 is equal to 1', 1 === 1);
+    testResults('2 is not equal to 1', 2 !== 1);
+    testResults('2 is equal to 1 compare', 2 === 1);
+    var todaysDate= new Date()
+    var anio=todaysDate.getFullYear();
+    testResults('El año es 2018', anio === 2018);
+    testResults('Asegurarse que el Nombre esta en Mayusculas', changeNameToUppercase ('pedro') === 'PEDRO');
   }
   (function() {
     testTheTruth();
