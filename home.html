@@ -101,20 +101,21 @@
 <script>
   function testTheTruth() {
     testResults('1 is equal to 1', 1 === 1);
+    var o = {
+      {
+        volumeInfo:{
+          title: 'lopez'
+          subtitle 'pedro'
+        }
+      }
+    };
+    testResults ('el title is lopez, pedro', mapVolumes(o) === 'lopez, pedro')
   }
   (function() {
     testTheTruth();
   })()
 
-  var o = {
-    {
-      volumeInfo:{
-        title: 'lopez'
-        subtitle 'pedro'
-      }
-    }
-  };
-  testResults ('el title is lopez, pedro', mapVolumes(o) === 'lopez, pedro')
+
 
 </script>
 </body>
