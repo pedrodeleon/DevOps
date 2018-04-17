@@ -85,8 +85,8 @@
     testResults('2 is equal to 1 compare', 2 === 1);
     var todaysDate= new Date()
     var anio=todaysDate.getFullYear();
-    testResults('El año es 2018', anio === 2018);
-    testResults('Asegurarse que el Nombre esta en Mayusculas', changeNameToUppercase ('pedro') === 'PEDRO');
+    testResults('Nombre mayusculas',changeNameToUppercase('pedro') === 'PEDRO');
+    testResults('el año es 2018', greeting('pedro').indexOf('2018') > -1)
   }
   (function() {
     testTheTruth();
